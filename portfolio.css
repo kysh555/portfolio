@@ -1,0 +1,44 @@
+/* ヘッダー */
+#header-bar {
+  background-color: beige;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ヘッダー左側（タイトル部分） */
+#header-left {
+  background-color: #96cbdc;
+}
+
+#header-title {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+/* ヘッダー右側（メニュー部分） */
+#header-right {
+  background-color: #63b2aa;
+  width: 50%;
+}
+
+#menus {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu > a {
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+}
+/* ヘッダー */
+
+/* フッター */
+
+footer {
+  background-color: #ffefda;
+  text-align: center;
+}
