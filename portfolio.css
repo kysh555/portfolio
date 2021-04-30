@@ -36,9 +36,31 @@
 }
 /* ヘッダー */
 
+
+/* メイン */
+/* works */
+#works {
+  background-color: #fff3b7;
+  height: 500px;
+}
+
+#about-me {
+  background-color: #d1ffc4;
+  height: 500px;
+}
+
+#contact {
+  background-color: #c4d1ff;
+  height: 500px;
+}
+/* メイン */
+
+
 /* フッター */
 
 footer {
   background-color: #ffefda;
   text-align: center;
 }
+
+/* フッター */
