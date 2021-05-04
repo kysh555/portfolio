@@ -1,3 +1,11 @@
+body {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 /* ヘッダー */
 #header-bar {
   background-color: beige;
@@ -32,23 +40,58 @@
 
 .menu > a {
   text-decoration: none;
-  color: rgb(37, 37, 37);
+  color: #252525;
 }
 /* ヘッダー */
 
 
 /* メイン */
 /* works */
-#works {
+#work-area {
   background-color: #fff3b7;
   height: 500px;
 }
 
+#work-title {
+  height: 10%;
+  font-size: 20px;
+  text-align: center;
+  padding: 15px 0;
+}
+
+#works {
+  height: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#work-list {
+  width: 100%;
+}
+
+#work-lists {
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.work-list { 
+  list-style: none;
+}
+
+.work-list > a {
+  text-decoration: none;
+}
+
+/* about me */
 #about-me {
   background-color: #d1ffc4;
   height: 500px;
 }
 
+/* contact */
 #contact {
   background-color: #c4d1ff;
   height: 500px;
