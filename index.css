@@ -4,6 +4,8 @@ body {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* ヘッダー */
@@ -81,7 +83,7 @@ body {
   list-style: none;
 }
 
-.work-list > a {
+.list > a {
   text-decoration: none;
 }
 
@@ -96,6 +98,28 @@ body {
   background-color: #c4d1ff;
   height: 500px;
 }
+
+#item-list {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#items {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  list-style: none;
+}
+
+.item > a {
+  text-decoration: none;
+}
+
 /* メイン */
 
 
