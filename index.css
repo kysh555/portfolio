@@ -8,14 +8,20 @@ body {
   margin: 0;
 }
 
+header {
+  height: 100px;
+}
+
 /* ヘッダー */
 #header-bar {
+  position: fixed;
   background-color: beige;
   width: 100%;
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 20;
 }
 
 /* ヘッダー左側（タイトル部分） */
@@ -48,6 +54,34 @@ body {
 
 
 /* メイン */
+
+/* main画像 */
+#image-area {
+  position: relative;
+}
+
+#image-area > img {
+  width: 100%;
+}
+
+#link-source {
+  position: absolute;
+  bottom: 1%;
+  right: 0.5%;
+}
+
+#link-source {
+  font-size: 12px;
+  color: #c5c5c5;
+  position: absolute;
+  z-index: 10;
+}
+
+#link-source > a {
+  text-decoration: none;
+  color: #c5c5c5;
+}
+
 /* works */
 #work-area {
   background-color: #fff3b7;
