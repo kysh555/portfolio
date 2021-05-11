@@ -4,7 +4,6 @@
     <meta charset="UTF-8"></meta>
     <link rel="stylesheet", href="index.css">
     <title>portfolio</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
 
   <body>
@@ -66,5 +65,21 @@
     <footer>
       @2021
     </footer>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(function(){
+        $(window).on('scroll', function(){
+          heightMainImage = $('#image-area').height();
+          headerBar = $('#header-bar');
+          if($(window).scrollTop() > heightMainImage){
+            headerBar.addClass('transform');
+          } else {
+            headerBar.removeClass('transform');
+          }
+        })
+      });
+    </script>
+</script></script>
   </body>
 </html>
