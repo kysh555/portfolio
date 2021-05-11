@@ -8,35 +8,35 @@ body {
   margin: 0;
 }
 
-header {
-  height: 100px;
-}
-
 /* ヘッダー */
 #header-bar {
   position: fixed;
   background-color: beige;
   width: 100%;
-  height: 100px;
+  height: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 20;
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+#header-bar.transform {
+  background-color: rgb(202, 153, 153, 0.5);
+  height: 50px;
+  transition: 0.6s;
 }
 
 /* ヘッダー左側（タイトル部分） */
-#header-left {
-  background-color: #96cbdc;
-}
-
 #header-title {
   font-size: 20px;
   margin-left: 20px;
+  color: #252525;
 }
 
 /* ヘッダー右側（メニュー部分） */
 #header-right {
-  background-color: #63b2aa;
   width: 50%;
 }
 
