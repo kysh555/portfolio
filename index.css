@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #252525;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -36,7 +41,6 @@ html {
 /* ヘッダー左側（タイトル部分） */
 #header-title {
   font-size: 20px;
-
   margin-left: 20px;
   color: #252525;
 }
@@ -159,10 +163,6 @@ html {
 
 .item {
   list-style: none;
-}
-
-.item > a {
-  text-decoration: none;
 }
 
 /* メイン */
