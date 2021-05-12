@@ -8,6 +8,10 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ヘッダー */
 #header-bar {
   position: fixed;
@@ -85,7 +89,7 @@ body {
 /* works */
 #work-area {
   background-color: #fff3b7;
-  height: 500px;
+  height: 750px;
 }
 
 #work-title {
@@ -96,10 +100,9 @@ body {
 }
 
 #works {
-  height: 90%;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding: 280px 50px;
 }
 
 #work-list {
@@ -119,6 +122,11 @@ body {
 
 .list > a {
   text-decoration: none;
+}
+
+#more {
+  text-align: right;
+  padding-right: 200px;
 }
 
 /* about me */
