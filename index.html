@@ -17,9 +17,9 @@
 
         <div id="header-right">
           <ul id="menus">
-            <li class="menu"><a href="">works</a></li>
-            <li class="menu"><a href="#">about me</a></li>
-            <li class="menu"><a href="#">contact</a></li>
+            <li class="menu"><a href="#work-area">works</a></li>
+            <li class="menu"><a href="#about-me">about me</a></li>
+            <li class="menu"><a href="#contact">contact</a></li>
           </ul>
         </div>
       </div>
@@ -45,6 +45,9 @@
               <li class="list"><a href="#">work3</a></li>
             </ul>
           </div>
+        </div>
+        <div id="more">
+          <a href="work.html"> > more</a>
         </div>
       </div>
 
@@ -77,6 +80,16 @@
           } else {
             headerBar.removeClass('transform');
           }
+        })
+      });
+
+      $(function(){
+        $('a[href^="#"]').on('click', function(){
+          speed = 100;
+          href = $(this).attr("href");
+          target = $(href == "#" || href == "" ? 'html' : href);
+          position = target.offset().top;
+          $("html, body").animate({scrollTop:position}, speed, "swing");
         })
       });
     </script>
