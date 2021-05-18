@@ -19,9 +19,9 @@
 
       <div id="work-area">
         <div id="work-title">
-          作品一覧
+          <h2><span>WORKS</span></h2>
         </div>
-        <div id="works">
+        <div id="works" class="scroll-anime">
           <div id="work-list">
             <ul id="work-lists">
               <li class="list"><a class="modal-btn" href="#">Hachi App</a></li>
@@ -30,20 +30,25 @@
             </ul>
           </div>
         </div>
-        <div id="more">
+        <div id="more" class="scroll-anime">
           <a href="work.html"> > more</a>
         </div>
       </div>
 
       <div id="about-me">
-        about me
+        <div id="about-me-title">
+          <h2><span>ABOUT ME</span></h2>
+        </div>
+        <div class="scroll-anime">
+          説明
+        </div>
       </div>
 
       <div id="contact">
         <div  id="contact-title">
-          <h2>CONTACT</h2>
+          <h2><span>CONTACT</span></h2>
         </div>
-        <div id="item-list">
+        <div id="item-list" class="scroll-anime">
           <ul id="items">
             <li class="item"><a href="https://github.com/kysh555"><img src="img/github-logo_icon-icons.com_73546.png" width="100px">github</a></li>
             <li class="item"><a href="https://twitter.com/96sawid"><img src="img/Twitter_icon-icons.com_66803.png" width="100px">twitter</a></li>
@@ -62,7 +67,7 @@
         $(window).on('scroll', function(){
           heightMainImage = $('#image-area').height();
           headerBar = $('#header-bar');
-          if($(window).scrollTop() > heightMainImage){
+          if($(window).scrollTop() > heightMainImage * 0.9){
             headerBar.addClass('transform');
           } else {
             headerBar.removeClass('transform');
@@ -77,6 +82,19 @@
           target = $(href == "#" || href == "" ? 'html' : href);
           position = target.offset().top;
           $("html, body").animate({scrollTop:position}, speed, "swing");
+        })
+      });
+
+      $(function(){
+        $(window).on('scroll', function(){
+          $(".scroll-anime").each(function(){
+            scrollAmount = $(window).scrollTop();
+            heightWindow = $(window).height();
+            target = $(this).offset().top;
+            if(scrollAmount > target - heightWindow + 100){
+              $(this).addClass("fadeIn");
+            }
+          });
         })
       });
 

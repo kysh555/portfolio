@@ -20,7 +20,7 @@ html {
 /* ヘッダー */
 #header-bar {
   position: fixed;
-  background-color: rgb(213, 213, 213, 0.5);
+  background-color: rgba(213, 213, 213, 0.344);
   width: 100%;
   height: 140px;
   display: flex;
@@ -28,12 +28,12 @@ html {
   align-items: center;
   z-index: 20;
   transition: 0.6s;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 #header-bar.transform {
-  background-color: rgb(86, 86, 86, 0.6);
+  background-color: rgb(213, 213, 213, 0.8);
   height: 50px;
   transition: 0.6s;
 }
@@ -42,7 +42,7 @@ html {
 #header-title {
   font-size: 20px;
   margin-left: 20px;
-  color: #252525;
+  color: ##565656;
 }
 
 /* ヘッダー右側（メニュー部分） */
@@ -58,7 +58,7 @@ html {
 
 .menu > a {
   text-decoration: none;
-  color: #252525;
+  color: ##565656;
 }
 /* ヘッダー */
 
@@ -95,12 +95,12 @@ html {
 
 /* works */
 #work-area {
-  background-color: #d7cec7;
+  background-color: #f1ece8;
   height: 750px;
 }
 
 #work-title {
-  height: 10%;
+  color: #4b4b4b;
   font-size: 20px;
   text-align: center;
   padding: 30px 0;
@@ -109,7 +109,7 @@ html {
 #works {
   display: flex;
   align-items: center;
-  padding: 280px 50px;
+  padding: 200px 50px;
 }
 
 #work-list {
@@ -138,28 +138,65 @@ html {
 
 /* about me */
 #about-me {
-  background-color: #76323fb3;
+  background-color: #b16371b3;
   height: 500px;
+  color: #4b4b4b;
+}
+
+#about-me-title {
+  padding-top: 30px;
 }
 
 /* contact */
 #contact {
-  background-color: #d7cec7;
-  height: 500px;
+  background-color: #f1ece8;
+  height: 700px;
+  color: #4b4b4b;
 }
 
+#contact-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: 3rem;
+  position: relative;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h2 span {
+  font-size: 18px;
+  font-size: 1.8rem;
+  display: block;
+}
+
+h2:before {
+  position: absolute;
+  bottom: -5px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 5px;
+  content: '';
+  border-radius: 3px;
+  background: #565656;
+}
+
+
 #item-list {
-  height: 100%;
+  height: 550px;
   display: flex;
   justify-content: space-around;
 }
 
 #items {
   width: 100%;
-  width: 80%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 0 100px;
 }
 
 .item {
@@ -173,8 +210,21 @@ html {
 
 footer {
   text-align: center;
-  background-color: #d7cec7;
+  background-color: #f1ece8;
   height: 50px;
 }
 
 /* フッター */
+
+/* フェードインアニメーション */
+.scroll-anime {
+  opacity: 0;
+  transition : all 2000ms;
+  transform : translate(0, 100px);
+}
+
+.scroll-anime.fadeIn {
+  opacity: 1;
+  transform : translate(0, 0);
+}
+/* フェードインアニメーション */
