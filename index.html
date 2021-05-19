@@ -4,6 +4,9 @@
     <meta charset="UTF-8"></meta>
     <link rel="stylesheet", href="index.css">
     <title>portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
   </head>
 
   <body>
@@ -24,7 +27,7 @@
         <div id="works" class="scroll-anime">
           <div id="work-list">
             <ul id="work-lists">
-              <li class="list"><a href="#work1" class="wodk-btn">Hachi App</a></li>
+              <li class="list"><a href="#work1" class="work-btn">Hachi App</a></li>
               <li class="list"><a href="#work2" class="work-btn">work2</a></li>
               <li class="list"><a href="#work3" class="work-btn">work3</a></li>
             </ul>
@@ -67,50 +70,5 @@
 
       <div id="footer"></div>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-      $(function(){
-        $(window).on('scroll', function(){
-          heightMainImage = $('#image-area').height();
-          headerBar = $('#header-bar');
-          if($(window).scrollTop() > heightMainImage * 0.9){
-            headerBar.addClass('transform');
-          } else {
-            headerBar.removeClass('transform');
-          }
-        })
-      });
-
-      $(function(){
-        $('a[href^="#"]').on('click', function(){
-          speed = 100;
-          href = $(this).attr("href");
-          target = $(href == "#" || href == "" ? 'html' : href);
-          position = target.offset().top;
-          $("html, body").animate({scrollTop:position}, speed, "swing");
-        })
-      });
-
-      $(function(){
-        $(window).on('scroll', function(){
-          $(".scroll-anime").each(function(){
-            scrollAmount = $(window).scrollTop();
-            heightWindow = $(window).height();
-            target = $(this).offset().top;
-            if(scrollAmount > target - heightWindow + 100){
-              $(this).addClass("fadeIn");
-            }
-          });
-        })
-      });
-
-      $(function(){
-        $('#header').load("header.html");
-        $('#footer').load("footer.html");
-      });
-    </script>
-</script></script>
   </body>
 </html>
