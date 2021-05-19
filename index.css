@@ -42,7 +42,7 @@ html {
 #header-title {
   font-size: 20px;
   margin-left: 20px;
-  color: ##565656;
+  color: #565656;
 }
 
 /* ヘッダー右側（メニュー部分） */
@@ -58,7 +58,7 @@ html {
 
 .menu > a {
   text-decoration: none;
-  color: ##565656;
+  color: #565656;
 }
 /* ヘッダー */
 
