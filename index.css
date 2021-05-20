@@ -228,3 +228,36 @@ footer {
   transform : translate(0, 0);
 }
 /* フェードインアニメーション */
+
+/* モーダル表示アニメーション */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.modal-back {
+  background: rgba(0,0,0,0.8);
+  height: 100vh;
+  width: 100%;
+}
+
+.modal-content {
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 60%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 70%;
+  height: 300px;
+}
+
+body.fixed {
+  position: fixed;
+  left: 0;
+}
+/* モーダル表示アニメーション */
