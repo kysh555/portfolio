@@ -13,9 +13,9 @@ a {
   color: #252525;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 /* ヘッダー */
 #header-bar {
@@ -42,7 +42,6 @@ html {
 #header-title {
   font-size: 20px;
   margin-left: 20px;
-  color: #565656;
 }
 
 /* ヘッダー右側（メニュー部分） */
@@ -58,7 +57,7 @@ html {
 
 .menu > a {
   text-decoration: none;
-  color: #565656;
+  color: #252525;
 }
 /* ヘッダー */
 
@@ -96,14 +95,14 @@ html {
 /* works */
 #work-area {
   background-color: #f1ece8;
-  height: 750px;
+  height: 800px;
 }
 
 #work-title {
   color: #4b4b4b;
   font-size: 20px;
   text-align: center;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 #works {
@@ -139,24 +138,24 @@ html {
 /* about me */
 #about-me {
   background-color: #b16371b3;
-  height: 500px;
+  height: 800px;
   color: #4b4b4b;
 }
 
 #about-me-title {
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 /* contact */
 #contact {
   background-color: #f1ece8;
-  height: 700px;
+  height: 740px;
   color: #4b4b4b;
 }
 
 #contact-title {
   text-align: center;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 h2 {
