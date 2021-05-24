@@ -44,10 +44,17 @@ $(function(){
 
 // 作品詳細表示・非表示の切り替え
 $(function(){
-  $(".show-work").hide();
-
-  $(".work-btn").on('click', function(){
-    $(".show-work").not($($(this).attr$("href"))).hide();
-    $($(this).attr("href")).show();
+  var scrollAmount;
+  $(".modal-open").on('click', function(){
+    scrollAmount = $(window).scrollTop();
+    $(".modal").fadeIn();
+    $("body").addClass("fixed").css({top: -scrollAmount});
+    return false;
+  });
+  $(".modal-close, .modal-back").on('click', function(){
+    $(".modal").fadeOut();
+    $("body").removeClass("fixed");
+    $(window).scrollTop(scrollAmount);
+    return false;
   });
 });
