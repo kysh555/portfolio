@@ -218,13 +218,11 @@ footer {
 /* フェードインアニメーション */
 .scroll-anime {
   opacity: 0;
-  transition : all 2000ms;
-  transform : translate(0, 100px);
+  transition : all 1000ms;
 }
 
 .scroll-anime.fadeIn {
   opacity: 1;
-  transform : translate(0, 0);
 }
 /* フェードインアニメーション */
 
@@ -233,6 +231,7 @@ footer {
   display: none;
   position: fixed;
   top: 0;
+  left: 0;
   height: 100vh;
   width: 100%;
 }
@@ -248,11 +247,18 @@ footer {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 60%;
   transform: translate(-50%, -50%);
-  padding: 40px;
-  width: 70%;
   height: 300px;
+  width: 80%;
+}
+
+.modal-content-inner {
+  position: relative;
+  padding: 24px;
+}
+
+.modal-close {
+  position: absolute;
 }
 
 body.fixed {
