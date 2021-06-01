@@ -46,13 +46,15 @@ $(function(){
 $(function(){
   var scrollAmount;
   $(".modal-open").on('click', function(){
+    target = $(this).data('target');
+    modal = document.getElementById(target);
     scrollAmount = $(window).scrollTop();
-    $(".modal").fadeIn();
+    $(modal).fadeIn();
     $("body").addClass("fixed").css({top: -scrollAmount});
     return false;
   });
   $(".modal-close, .modal-back").on('click', function(){
-    $(".modal").fadeOut();
+    $(modal).fadeOut();
     $("body").removeClass("fixed");
     $(window).scrollTop(scrollAmount);
     return false;
