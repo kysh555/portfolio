@@ -234,6 +234,7 @@ footer {
   left: 0;
   height: 100vh;
   width: 100%;
+  z-index: 20;
 }
 
 .modal-back {
@@ -248,21 +249,49 @@ footer {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 300px;
+  height: 90vh;
   width: 80%;
 }
 
 .modal-content-inner {
   position: relative;
-  padding: 24px;
+  padding: 80px;
+  color: #4b4b4b;
+}
+
+.modal-content-inner > a > img {
+  margin: 10px;
+}
+
+.link-to-github,
+.link-to-site {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+.modal-title {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+.modal-work {
+  display: flex;
+  height: 60%;
 }
 
 .modal-close {
   position: absolute;
+  top: 10;
+  color: #4b4b4b;
+  margin-top: 50px;
 }
 
 body.fixed {
   position: fixed;
   left: 0;
+}
+
+#link-source {
+  z-index: 5;
 }
 /* モーダル表示アニメーション */
