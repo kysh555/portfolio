@@ -179,7 +179,6 @@ h2:before {
   left: calc(50% - 30px);
   width: 60px;
   height: 5px;
-  content: '';
   border-radius: 3px;
   background: #565656;
 }
@@ -219,7 +218,7 @@ footer {
 /* フェードインアニメーション */
 .scroll-anime {
   opacity: 0;
-  transition : all 1000ms;
+  transition : all 2000ms;
 }
 
 .scroll-anime.fadeIn {
@@ -256,12 +255,14 @@ footer {
 
 .modal-content-inner {
   position: relative;
-  padding: 80px;
+  padding: 0px;
   color: #4b4b4b;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-content-inner > a > img {
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 .link-to-github,
@@ -272,19 +273,19 @@ footer {
 
 .modal-title {
   font-size: 25px;
-  margin-bottom: 40px;
+  /* margin-bottom: 20px; */
 }
 
 .modal-work {
   display: flex;
-  height: 60%;
+  /* height: 60%; */
 }
 
 .modal-close {
   position: absolute;
   top: 10;
   color: #4b4b4b;
-  margin-top: 50px;
+  /* margin-top: 30px; */
 }
 
 body.fixed {
