@@ -263,10 +263,6 @@ footer {
   flex-direction: column;
 }
 
-.modal-content-inner > a > img {
-  /* margin: 10px; */
-}
-
 .link-to-github,
 .link-to-site {
   margin-left: 40px;
